@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién Quiere Ser Millonario? - Historia</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="lifelines">
+            <div class="lifeline" id="fifty-fifty" onclick="useFiftyFifty()">50:50</div>
+            <div class="lifeline" id="phone-friend" onclick="usePhoneFriend()">Llamar a un amigo</div>
+            <div class="lifeline" id="audience" onclick="useAudience()">Ayuda del público</div>
+        </div>
+        <div class="titleMillonario">
+            <h1> <b>¿Que tanto sabes de cultura general? </b></h1>
+            
+        </div>
+
+        <div class="question-container">
+            <h2 id="question">¿Listo para empezar?</h2>
+            <div class="options-container" id="options">
+                <div class="option" onclick="startGame()">¡Comenzar!</div>
+            </div>
+        </div>
+
+        <div class="prize-ladder">
+            <div class="prize-level current">$50 </div>
+            <div class="prize-level">$100</div>
+            <div class="prize-level">$200</div>
+            <div class="prize-level">$300</div>
+            <div class="prize-level">$400</div>
+            <div class="prize-level">$500</div>
+            <div class="prize-level">$600</div>
+            <div class="prize-level">$700</div>
+            <div class="prize-level">$800</div>
+            <div class="prize-level">$900</div>
+            <div class="prize-level">$1000</div>
+            <div class="prize-level">$1100</div>         
+                    
+                               
+                       
+            
+        </div>
+    </div>
+
+    <script type="module">
+        import { startGame, useFiftyFifty, usePhoneFriend, useAudience } from './logica.js';
+        window.startGame = startGame;
+        window.useFiftyFifty = useFiftyFifty;
+        window.usePhoneFriend = usePhoneFriend;
+        window.useAudience = useAudience;
+    </script>
+</body>
+</html>
+
